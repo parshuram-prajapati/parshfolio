@@ -1,0 +1,387 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #2d2d2d;
+    color: white;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    background-color: #2d2d2d;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #e5e5e5;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #ffbd59;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 80px;
+    align-items: center;
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.hero-text h3 {
+    color: #ffbd59;
+    margin-bottom: 10px;
+}
+
+.hero-text h1 {
+    font-size: 36px;
+    margin: 15px 0;
+}
+
+.hero-text h1 span {
+    color: #fbbc04;
+}
+
+.hero-text p {
+    color: #ccc;
+    margin: 20px 0;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.btn {
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #7c3aed;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #5b21b6;
+}
+
+.btn-secondary {
+    background-color: #fbbc04;
+    color: black;
+}
+
+.btn-secondary:hover {
+    background-color: #e6a800;
+}
+
+@keyframes scaleUp {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+.hero-img img {
+    max-width: 400px;
+    border-radius: 12px;
+    animation: scaleUp 4s ease-in-out forwards;
+    box-shadow: 0 0 30px rgba(255, 221, 0, 0.8);
+
+
+}
+
+.hire-me {
+    background-color: #222;
+    padding: 40px 80px;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.hire-me form {
+    max-width: 549px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.hire-me label {
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.hire-me input,
+.hire-me textarea {
+    padding: 12px 15px;
+    border-radius: 6px;
+    border: none;
+    font-size: 16px;
+    resize: vertical;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.hire-me textarea {
+    min-height: 120px;
+}
+
+.hire-me input:focus,
+.hire-me textarea:focus {
+    outline: 2px solid #7c3aed;
+    background-color: #333;
+}
+
+.hire-me button {
+    background-color: #7c3aed;
+    color: white;
+    font-weight: bold;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.hire-me button:hover {
+    background-color: #5b21b6;
+}
+
+.about {
+    padding: 60px 40px;
+    background-color: #222;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.about-text {
+    flex: 1 1 320px;
+    max-width: 600px;
+}
+
+.about-text h2 {
+    font-size: 24px;
+    margin-bottom: 36px;
+}
+
+.about-text h2 span {
+    color: #fbbc04;
+}
+
+.about-text p {
+    color: #ccc;
+    margin-bottom: 66px;
+}
+
+.social-icons {
+    margin: 20px 0;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: white;
+    background-color: #0f5e7e;
+    padding: 2px;
+    margin-right: 8px;
+    border-radius: 27%;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 36px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a i {
+    font-size: 30px;
+    vertical-align: middle;
+}
+
+.social-icons a:hover {
+    background-color: #fbbc04;
+    color: black;
+}
+
+.stats {
+    flex: 1 1 320px;
+    max-width: 400px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.stat-box {
+    background-color: #333;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.stat-box h3 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.stat-box p {
+    color: #ccc;
+}
+
+.services {
+    padding: 60px 40px;
+    background-color: #1f1f1f;
+    color: white;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 28px;
+    color: #fbbc04;
+    margin-bottom: 40px;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    background-color: #333;
+    border-radius: 10px;
+    padding: 30px 20px;
+    max-width: 300px;
+    flex: 1 1 280px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.service-card h3 {
+    color: #ffbd59;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    color: #ccc;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+    .about {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+
+    .stats {
+        max-width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .service-cards {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding: 40px 20px;
+        align-items: flex-start;
+    }
+
+    .hero-img img {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        background-color: #2d2d2d;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 15px;
+        border-radius: 8px;
+        display: none;
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    header {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .about-text,
+    .stats {
+        max-width: 100%;
+    }
+
+    .service-card {
+        max-width: 100%;
+    }
+}
