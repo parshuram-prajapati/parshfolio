@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>code-by-parshuram</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <div class="logo">Code-By-Parshuram</div>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+        <nav id="nav-menu">
+            <a href="#">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#services">SERVICES</a>
+            <a href="#">RESUME</a>
+            <a href="#hire-me-form">HIRE ME</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h3>Hello !</h3>
+            <h1>I'm Professional Web Designer & <span>Wordpress Developer</span></h1>
+            <p>Passionate web developer crafting modern, responsive, and user-focused websites.
+                Experienced in building clean, functional UIs with HTML, CSS, JavaScript, and React.</p>
+            <div class="buttons">
+                <button class="btn btn-primary"
+                    onclick="document.getElementById('hire-me-form').scrollIntoView({ behavior: 'smooth' });">
+                    Hire Me
+                </button>
+                <button class="btn btn-secondary" onclick="downloadCV()">Download CV</button>
+            </div>
+        </div>
+        <div class="hero-img">
+            <img src="image.png" alt="Profile" />
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-text">
+            <h2>Hello! I'm <span>Parshuram Prajapati</span>, a Web Developer</h2>
+            <p>I’m a passionate web developer with over a year of experience building responsive and modern websites.
+                Currently, I'm pursuing my degree in CSE (AIML) at BLDEA College of Engineering, Vijayapur.</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/share/15SJ5GW2Da/" target="_blank"><i
+                        class="fab fa-facebook-f"></i></a>
+                <a href="https://www.youtube.com/@urbanshorts18" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.instagram.com/its_me_parshuram_18?igsh=MWtqY2U1cjAxNnRxag==" target="_blank"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/parashuram-prajapati-97659a32a/" target="_blank"><i
+                        class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+
+        <div class="stats">
+            <div class="stat-box">
+                <h3 id="projects-count">0</h3>
+                <p>Web Projects Completed</p>
+            </div>
+            <div class="stat-box">
+                <h3 id="clients-count">0</h3>
+                <p>Clients Trained</p>
+            </div>
+            <div class="stat-box">
+                <h3 id="years-dev">0</h3>
+                <p>Years in Web Development</p>
+            </div>
+            <div class="stat-box">
+
+                <h3 id="years-sm">0</h3>
+                <p>Years as Social Media Influencer</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <h2>My Services</h2>
+        <div class="service-cards">
+            <div class="service-card">
+                <h3>Web Development</h3>
+                <p>Building modern, responsive websites using HTML, CSS, and JavaScript to bring your ideas to life.</p>
+            </div>
+            <div class="service-card">
+                <h3>Front-End Development</h3>
+                <p>Creating beautiful and user-friendly interfaces with the latest front-end technologies.</p>
+            </div>
+            <div class="service-card">
+                <h3>Website Maintenance</h3>
+                <p>Providing ongoing support to keep your website secure, fast, and up to date.</p>
+            </div>
+            <div class="service-card">
+                <h3>Social Media Content Creation</h3>
+                <p>Turning ideas into vibrant social media content that stands out.
+                    Your story, your voice, perfectly crafted for every platform.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="hire-me" id="hire-me-form">
+        <form action="#" method="POST" name="submit-to-google-sheet">
+            <h2 style="color:#fbbc04; margin-bottom: 20px;">Hire Me</h2>
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Your full name" required />
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Your email" required />
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Your phone number" />
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Tell me about your project..." required></textarea>
+            <button type="submit">Send Request</button>
+            <p id="msg" style="color: lime; font-weight: bold; display: none; margin-top: 10px;">Request Sent!</p>
+        </form>
+    </section>
+
+    <!-- Scripts -->
+    <script>
+        function toggleMenu() {
+            document.getElementById('nav-menu').classList.toggle('active');
+        }
+
+        function downloadCV() {
+            const cvUrl = 'https://drive.google.com/file/d/1nFm1qctQK8SYbrjE68Bj8cQ4vCCzKkMU/view?usp=sharing';
+            window.open(cvUrl, '_blank');
+        }
+
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbylPLT8h20UkwVvXSjwmALUYQWjaVvyfqprpCxXzc5CZZJpLiUFGFuvfRnRlQBoIlugtQ/exec';
+        const form = document.forms['submit-to-google-sheet'];
+        const msg = document.getElementById('msg');
+
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.style.display = 'block';
+                    msg.textContent = "Request Sent!";
+                    setTimeout(() => {
+                        msg.style.display = 'none';
+                    }, 3000);
+                    form.reset();
+                })
+                .catch(error => {
+                    msg.style.display = 'block';
+                    msg.style.color = 'red';
+                    msg.textContent = "Something went wrong!";
+                    setTimeout(() => {
+                        msg.style.display = 'none';
+                        msg.style.color = 'lime';
+                    }, 3000);
+                });
+        });
+
+        function animateValue(id, start, end, duration) {
+            let obj = document.getElementById(id);
+            let startTimestamp = null;
+            const step = (timestamp) => {
+                if (!startTimestamp) startTimestamp = timestamp;
+                const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+                obj.textContent = Math.floor(progress * (end - start) + start);
+                if (progress < 1) {
+                    window.requestAnimationFrame(step);
+                }
+            };
+            window.requestAnimationFrame(step);
+        }
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateValue("projects-count", 0, 3, 1500);
+                    animateValue("clients-count", 0, 2, 1500);
+                    animateValue("years-dev", 0, 1, 1500);
+                    animateValue("years-sm", 0, 1, 1500);
+                    observer.disconnect();
+                }
+            });
+        }, {
+            threshold: 0.5
+        });
+
+        observer.observe(document.querySelector("#about .stats"));
+    </script>
+</body>
+
+</html>
