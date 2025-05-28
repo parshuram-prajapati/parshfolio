@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>code-by-parshuram</title>
+    <title>Code-By-Parshuram</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link rel="stylesheet" href="style.css" />
 </head>
@@ -16,18 +16,18 @@
             <i class="fas fa-bars"></i>
         </div>
         <nav id="nav-menu">
-            <a href="#">HOME</a>
+            <a href="#home">HOME</a>
             <a href="#about">ABOUT</a>
             <a href="#services">SERVICES</a>
-            <a href="#">RESUME</a>
+            <a href="#projects">PROJECTS</a>
             <a href="#hire-me-form">HIRE ME</a>
         </nav>
     </header>
 
-    <section class="hero">
+    <section class="hero" id="home">
         <div class="hero-text">
-            <h3>Hello !</h3>
-            <h1>I'm Professional Web Designer & <span>Wordpress Developer</span></h1>
+            <h3>Hello!</h3>
+            <h1>I'm Parshuram Prajapati <span>Professional Web Developer & Designer</span></h1>
             <p>Passionate web developer crafting modern, responsive, and user-focused websites.
                 Experienced in building clean, functional UIs with HTML, CSS, JavaScript, and React.</p>
             <div class="buttons">
@@ -39,23 +39,21 @@
             </div>
         </div>
         <div class="hero-img">
-            <img src="image.png" alt="Profile" />
+            <img src="image.png" alt="Parshuram Prajapati Profile Picture" loading="lazy" />
         </div>
     </section>
 
     <section class="about" id="about">
         <div class="about-text">
-            <h2>Hello! I'm <span>Parshuram Prajapati</span>, a Web Developer</h2>
+            <h2 style="color:#fbbc04;">About Me</h2>
+            <h3>Hello! I'm <span>Parshuram Prajapati</span></h3>
             <p>I’m a passionate web developer with over a year of experience building responsive and modern websites.
                 Currently, I'm pursuing my degree in CSE (AIML) at BLDEA College of Engineering, Vijayapur.</p>
             <div class="social-icons">
-                <a href="https://www.facebook.com/share/15SJ5GW2Da/" target="_blank"><i
-                        class="fab fa-facebook-f"></i></a>
-                <a href="https://www.youtube.com/@urbanshorts18" target="_blank"><i class="fab fa-youtube"></i></a>
-                <a href="https://www.instagram.com/its_me_parshuram_18?igsh=MWtqY2U1cjAxNnRxag==" target="_blank"><i
-                        class="fab fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/parashuram-prajapati-97659a32a/" target="_blank"><i
-                        class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.facebook.com/share/15SJ5GW2Da/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.youtube.com/@urbanshorts18" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.instagram.com/its_me_parshuram_18?igsh=MWtqY2U1cjAxNnRxag==" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/parashuram-prajapati-97659a32a/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
             </div>
         </div>
 
@@ -66,14 +64,13 @@
             </div>
             <div class="stat-box">
                 <h3 id="clients-count">0</h3>
-                <p>Clients Trained</p>
+                <p>Clients Worked With</p>
             </div>
             <div class="stat-box">
                 <h3 id="years-dev">0</h3>
                 <p>Years in Web Development</p>
             </div>
             <div class="stat-box">
-
                 <h3 id="years-sm">0</h3>
                 <p>Years as Social Media Influencer</p>
             </div>
@@ -97,8 +94,31 @@
             </div>
             <div class="service-card">
                 <h3>Social Media Content Creation</h3>
-                <p>Turning ideas into vibrant social media content that stands out.
-                    Your story, your voice, perfectly crafted for every platform.</p>
+                <p>Turning ideas into vibrant social media content that stands out. Your story, your voice, perfectly crafted for every platform.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <h2>My Projects</h2>
+        <div class="project-cards">
+            <div class="project-card">
+                <img src="lib.png" alt="Library Management System project screenshot" loading="lazy" />
+                <h3>Library Management System</h3>
+                <p>A Tkinter-based desktop app for managing books, members, and fines with JSON storage.</p>
+                <a href="https://github.com/parshuram-prajapati/library-management" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+            </div>
+            <div class="project-card">
+                <img src="basu.png" alt="Portfolio Website project screenshot" loading="lazy" />
+                <h3>Portfolio Website</h3>
+                <p>Modern, responsive portfolio built with HTML, CSS, JavaScript and deployed on GitHub Pages.</p>
+                <a href="https://github.com/parshuram-prajapati/basavaraj" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+            </div>
+             <div class="project-card">
+                <img src="port.png" alt="Portfolio Website project screenshot" loading="lazy" />
+                <h3>Portfolio Website</h3>
+                <p>Modern, responsive portfolio built with HTML, CSS, JavaScript and deployed on GitHub Pages.</p>
+                <a href="https://github.com/parshuram-prajapati/basavaraj" target="_blank" rel="noopener noreferrer">View on GitHub</a>
             </div>
         </div>
     </section>
@@ -119,17 +139,19 @@
         </form>
     </section>
 
-    <!-- Scripts -->
+   
     <script>
         function toggleMenu() {
             document.getElementById('nav-menu').classList.toggle('active');
         }
 
+     
         function downloadCV() {
-            const cvUrl = 'https://drive.google.com/file/d/1zGdCcqjs4XNVPDIABYgjbiJgI4M7p9rW/view?usp=sharing';
+            const cvUrl = 'https://drive.google.com/uc?export=download&id=1nFm1qctQK8SYbrjE68Bj8cQ4vCCzKkMU';
             window.open(cvUrl, '_blank');
         }
 
+     
         const scriptURL = 'https://script.google.com/macros/s/AKfycbylPLT8h20UkwVvXSjwmALUYQWjaVvyfqprpCxXzc5CZZJpLiUFGFuvfRnRlQBoIlugtQ/exec';
         const form = document.forms['submit-to-google-sheet'];
         const msg = document.getElementById('msg');
@@ -140,9 +162,7 @@
                 .then(response => {
                     msg.style.display = 'block';
                     msg.textContent = "Request Sent!";
-                    setTimeout(() => {
-                        msg.style.display = 'none';
-                    }, 3000);
+                    setTimeout(() => { msg.style.display = 'none'; }, 3000);
                     form.reset();
                 })
                 .catch(error => {
@@ -173,18 +193,29 @@
         const observer = new IntersectionObserver(entries => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    animateValue("projects-count", 0, 3, 1500);
-                    animateValue("clients-count", 0, 2, 1500);
+                    animateValue("projects-count", 0, 1, 1500);
+                    animateValue("clients-count", 0, 1, 1500);
                     animateValue("years-dev", 0, 1, 1500);
                     animateValue("years-sm", 0, 1, 1500);
                     observer.disconnect();
                 }
             });
-        }, {
-            threshold: 0.5
-        });
+        }, { threshold: 0.5 });
 
         observer.observe(document.querySelector("#about .stats"));
+
+        document.querySelectorAll('nav a[href^="#"]').forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const target = document.querySelector(targetId);
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                    history.pushState("", document.title, window.location.pathname);
+                    document.getElementById('nav-menu').classList.remove('active');
+                }
+            });
+        });
     </script>
 </body>
 
