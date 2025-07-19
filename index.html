@@ -4,17 +4,16 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Code-By-Parshuram</title>
+    <title>Code‑By‑Parshuram</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+    <!-- Header -->
     <header>
-        <div class="logo">Code-By-Parshuram</div>
-        <div class="menu-toggle" onclick="toggleMenu()">
-            <i class="fas fa-bars"></i>
-        </div>
+        <div class="logo">Code‑By‑Parshuram</div>
+        <div class="menu-toggle" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
         <nav id="nav-menu">
             <a href="#home">HOME</a>
             <a href="#about">ABOUT</a>
@@ -24,39 +23,41 @@
         </nav>
     </header>
 
+    <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="hero-text">
             <h3>Hello!</h3>
             <h1>I'm Parshuram Prajapati <span>Professional Web Developer & Designer</span></h1>
-            <p>Passionate web developer crafting modern, responsive, and user-focused websites.
-                Experienced in building clean, functional UIs with HTML, CSS, JavaScript, and React.</p>
+            <p>Passionate web developer crafting modern, responsive, and user‑focused websites. Experienced in HTML,
+                CSS, JavaScript, and React.</p>
             <div class="buttons">
                 <button class="btn btn-primary"
-                    onclick="document.getElementById('hire-me-form').scrollIntoView({ behavior: 'smooth' });">
-                    Hire Me
-                </button>
+                    onclick="document.getElementById('hire-me-form').scrollIntoView({ behavior: 'smooth' });">Hire
+                    Me</button>
                 <button class="btn btn-secondary" onclick="downloadCV()">Download CV</button>
             </div>
         </div>
-        <div class="hero-img">
-            <img src="image.png" alt="Parshuram Prajapati Profile Picture" loading="lazy" />
-        </div>
+        <div class="hero-img"><img src="image.png" alt="Parshuram Profile" loading="lazy" /></div>
     </section>
 
+    <!-- About Section -->
     <section class="about" id="about">
         <div class="about-text">
             <h2 style="color:#fbbc04;">About Me</h2>
             <h3>Hello! I'm <span>Parshuram Prajapati</span></h3>
             <p>I’m a passionate web developer with over a year of experience building responsive and modern websites.
-                Currently, I'm pursuing my degree in CSE (AIML) at BLDEA College of Engineering, Vijayapur.</p>
+                Pursuing CSE (AIML) at BLDEA College of Engineering, Vijayapur.</p>
             <div class="social-icons">
-                <a href="https://www.facebook.com/share/15SJ5GW2Da/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://www.youtube.com/@urbanshorts18" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
-                <a href="https://www.instagram.com/its_me_parshuram_18?igsh=MWtqY2U1cjAxNnRxag==" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/parashuram-prajapati-97659a32a/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.facebook.com/share/15SJ5GW2Da/" target="_blank" rel="noopener noreferrer"><i
+                        class="fab fa-facebook-f"></i></a>
+                <a href="https://www.youtube.com/@urbanshorts18" target="_blank" rel="noopener noreferrer"><i
+                        class="fab fa-youtube"></i></a>
+                <a href="https://www.instagram.com/its_me_parshuram_18" target="_blank" rel="noopener noreferrer"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/parashuram-prajapati-97659a32a/" target="_blank"
+                    rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
             </div>
         </div>
-
         <div class="stats">
             <div class="stat-box">
                 <h3 id="projects-count">0</h3>
@@ -77,55 +78,58 @@
         </div>
     </section>
 
+    <!-- Services Section -->
     <section class="services" id="services">
         <h2>My Services</h2>
         <div class="service-cards">
             <div class="service-card">
                 <h3>Web Development</h3>
-                <p>Building modern, responsive websites using HTML, CSS, and JavaScript to bring your ideas to life.</p>
+                <p>Modern, responsive websites using HTML, CSS, JavaScript.</p>
             </div>
             <div class="service-card">
-                <h3>Front-End Development</h3>
-                <p>Creating beautiful and user-friendly interfaces with the latest front-end technologies.</p>
+                <h3>Front‑End Development</h3>
+                <p>User‑friendly interfaces with latest front‑end tech.</p>
             </div>
             <div class="service-card">
                 <h3>Website Maintenance</h3>
-                <p>Providing ongoing support to keep your website secure, fast, and up to date.</p>
+                <p>Ongoing support to keep your site secure and fast.</p>
             </div>
             <div class="service-card">
-                <h3>Social Media Content Creation</h3>
-                <p>Turning ideas into vibrant social media content that stands out. Your story, your voice, perfectly crafted for every platform.</p>
+                <h3>Social Media Content</h3>
+                <p>Vibrant social media content that tells your story.</p>
             </div>
         </div>
     </section>
 
+    <!-- Projects Section -->
     <section class="projects" id="projects">
         <h2>My Projects</h2>
         <div class="project-cards">
-            <div class="project-card">
-                <img src="lib.png" alt="Library Management System project screenshot" loading="lazy" />
+            <div class="project-card"><img src="lib.png" alt="Library System" loading="lazy" />
                 <h3>Library Management System</h3>
-                <p>A Tkinter-based desktop app for managing books, members, and fines with JSON storage.</p>
-                <a href="https://github.com/parshuram-prajapati/library-management" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                <p>Tkinter app to manage books, members, fines with JSON.</p><a
+                    href="https://github.com/parshuram-prajapati/library-management" target="_blank"
+                    rel="noopener noreferrer">View on GitHub</a>
             </div>
-            <div class="project-card">
-                <img src="basu.png" alt="Portfolio Website project screenshot" loading="lazy" />
+            <div class="project-card"><img src="basu.png" alt="Portfolio Website" loading="lazy" />
                 <h3>Portfolio Website</h3>
-                <p>Modern, responsive portfolio built with HTML, CSS, JavaScript and deployed on GitHub Pages.</p>
-                <a href="https://github.com/parshuram-prajapati/basavaraj" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                <p>Modern portfolio with HTML/CSS/JS deployed on GitHub Pages.</p><a
+                    href="https://github.com/parshuram-prajapati/basavaraj" target="_blank"
+                    rel="noopener noreferrer">View on GitHub</a>
             </div>
-             <div class="project-card">
-                <img src="port.png" alt="Portfolio Website project screenshot" loading="lazy" />
+            <div class="project-card"><img src="port.png" alt="Portfolio Website" loading="lazy" />
                 <h3>Portfolio Website</h3>
-                <p>Modern, responsive portfolio built with HTML, CSS, JavaScript and deployed on GitHub Pages.</p>
-                <a href="https://github.com/parshuram-prajapati/basavaraj" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                <p>Modern portfolio with HTML/CSS/JS deployed on GitHub Pages.</p><a
+                    href="https://github.com/parshuram-prajapati/basavaraj" target="_blank"
+                    rel="noopener noreferrer">View on GitHub</a>
             </div>
         </div>
     </section>
 
+    <!-- Hire Me Section -->
     <section class="hire-me" id="hire-me-form">
         <form action="#" method="POST" name="submit-to-google-sheet">
-            <h2 style="color:#fbbc04; margin-bottom: 20px;">Hire Me</h2>
+            <h2 style="color:#fbbc04; margin-bottom:20px;">Hire Me</h2>
             <label for="name">Full Name</label>
             <input type="text" id="name" name="name" placeholder="Your full name" required />
             <label for="email">Email Address</label>
@@ -135,37 +139,36 @@
             <label for="message">Message</label>
             <textarea id="message" name="message" placeholder="Tell me about your project..." required></textarea>
             <button type="submit">Send Request</button>
-            <p id="msg" style="color: lime; font-weight: bold; display: none; margin-top: 10px;">Request Sent!</p>
+            <p id="msg" style="font-weight:bold; display:none; margin-top:10px;"></p>
         </form>
     </section>
 
-   
+    <!-- Scripts -->
     <script>
-        function toggleMenu() {
-            document.getElementById('nav-menu').classList.toggle('active');
-        }
+        function toggleMenu() { document.getElementById('nav-menu').classList.toggle('active'); }
+        function downloadCV() { window.open('https://drive.google.com/file/d/1zGdCcqjs4XNVPDIABYgjbiJgI4M7p9rW/view?usp=sharing', '_blank'); }
 
-     
-        function downloadCV() {
-            const cvUrl = 'https://drive.google.com/file/d/1zGdCcqjs4XNVPDIABYgjbiJgI4M7p9rW/view?usp=sharing';
-            window.open(cvUrl, '_blank');
-        }
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbw2L2ieIRd4BZblG7YXgC2LAK833p_sYU9W0YFxD6Y4g4FBil9cu7h8DeXtS2zOEpIB/exec';
 
-     
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbxhDAb3Rah8ZBXUCw5Dd1V97apQN4GOZewBY7tNEbdl3iSUuMdJhecp2LpK7g2RQZ3A/exec';
+        const telegramBotToken = '7907978060:AAF8u_ody-TQaXryfMdC_rgUoTzg5xL1Xas';
+        const chatId = 'YOUR_CHAT_ID_HERE';
+
         const form = document.forms['submit-to-google-sheet'];
         const msg = document.getElementById('msg');
 
         form.addEventListener('submit', e => {
             e.preventDefault();
-            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                .then(response => {
+            const formData = new FormData(form);
+
+            fetch(scriptURL, { method: 'POST', body: formData })
+                .then(() => {
                     msg.style.display = 'block';
+                    msg.style.color = 'lime';
                     msg.textContent = "Request Sent!";
                     setTimeout(() => { msg.style.display = 'none'; }, 3000);
                     form.reset();
                 })
-                .catch(error => {
+                .catch(() => {
                     msg.style.display = 'block';
                     msg.style.color = 'red';
                     msg.textContent = "Something went wrong!";
@@ -174,25 +177,34 @@
                         msg.style.color = 'lime';
                     }, 3000);
                 });
+
+            const name = formData.get('name');
+            const email = formData.get('email');
+            const phone = formData.get('phone');
+            const messageText = formData.get('message');
+            const telegramMessage = `🚨 New Hire Request 🚨\n\n👤 Name: ${name}\n📧 Email: ${email}\n📱 Phone: ${phone}\n💬 Message: ${messageText}`;
+
+            fetch(`https://api.telegram.org/bot${telegramBotToken}/sendMessage`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ chat_id: chatId, text: telegramMessage })
+            }).catch(err => console.error('Telegram error:', err));
         });
 
         function animateValue(id, start, end, duration) {
-            let obj = document.getElementById(id);
-            let startTimestamp = null;
-            const step = (timestamp) => {
+            let obj = document.getElementById(id), startTimestamp = null;
+            const step = timestamp => {
                 if (!startTimestamp) startTimestamp = timestamp;
                 const progress = Math.min((timestamp - startTimestamp) / duration, 1);
                 obj.textContent = Math.floor(progress * (end - start) + start);
-                if (progress < 1) {
-                    window.requestAnimationFrame(step);
-                }
+                if (progress < 1) window.requestAnimationFrame(step);
             };
             window.requestAnimationFrame(step);
         }
 
         const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
+            entries.forEach(e => {
+                if (e.isIntersecting) {
                     animateValue("projects-count", 0, 1, 1500);
                     animateValue("clients-count", 0, 1, 1500);
                     animateValue("years-dev", 0, 1, 1500);
@@ -205,15 +217,11 @@
         observer.observe(document.querySelector("#about .stats"));
 
         document.querySelectorAll('nav a[href^="#"]').forEach(link => {
-            link.addEventListener('click', function (e) {
+            link.addEventListener('click', e => {
                 e.preventDefault();
-                const targetId = this.getAttribute('href');
-                const target = document.querySelector(targetId);
-                if (target) {
-                    target.scrollIntoView({ behavior: 'smooth' });
-                    history.pushState("", document.title, window.location.pathname);
-                    document.getElementById('nav-menu').classList.remove('active');
-                }
+                const tgt = document.querySelector(link.getAttribute('href'));
+                if (tgt) tgt.scrollIntoView({ behavior: 'smooth' });
+                document.getElementById('nav-menu').classList.remove('active');
             });
         });
     </script>
