@@ -2,227 +2,208 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Code‑By‑Parshuram</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Code‑By‑Parshuram</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
 </head>
 
 <body>
-    <!-- Header -->
-    <header>
-        <div class="logo">Code‑By‑Parshuram</div>
-        <div class="menu-toggle" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
-        <nav id="nav-menu">
-            <a href="#home">HOME</a>
-            <a href="#about">ABOUT</a>
-            <a href="#services">SERVICES</a>
-            <a href="#projects">PROJECTS</a>
-            <a href="#hire-me-form">HIRE ME</a>
-        </nav>
-    </header>
+  <!-- Header -->
+  <header>
+    <div class="logo">Code‑By‑Parshuram</div>
+    <div class="menu-toggle" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
+    <nav id="nav-menu">
+      <a href="#home">HOME</a>
+      <a href="#about">ABOUT</a>
+      <a href="#services">SERVICES</a>
+      <a href="#projects">PROJECTS</a>
+      <a href="#hire-me-form">HIRE ME</a>
+    </nav>
+  </header>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="hero-text">
-            <h3>Hello!</h3>
-            <h1>I'm Parshuram Prajapati <span>Professional Web Developer & Designer</span></h1>
-            <p>Passionate web developer crafting modern, responsive, and user‑focused websites. Experienced in HTML,
-                CSS, JavaScript, and React.</p>
-            <div class="buttons">
-                <button class="btn btn-primary"
-                    onclick="document.getElementById('hire-me-form').scrollIntoView({ behavior: 'smooth' });">Hire
-                    Me</button>
-                <button class="btn btn-secondary" onclick="downloadCV()">Download CV</button>
-            </div>
-        </div>
-        <div class="hero-img"><img src="image.png" alt="Parshuram Profile" loading="lazy" /></div>
-    </section>
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <h3>Hello!</h3>
+      <h1>I'm Parshuram Prajapati <span>Professional Web Developer & Designer</span></h1>
+      <p>Passionate web developer crafting modern, responsive, and user‑focused websites. Experienced in HTML, CSS, JavaScript, and React.</p>
+      <div class="buttons">
+        <button class="btn btn-primary" onclick="document.getElementById('hire-me-form').scrollIntoView({ behavior: 'smooth' });">Hire Me</button>
+        <button class="btn btn-secondary" onclick="downloadCV()">Download CV</button>
+      </div>
+    </div>
+    <div class="hero-img"><img src="image.png" alt="Parshuram Profile" loading="lazy" /></div>
+  </section>
 
-    <!-- About Section -->
-    <section class="about" id="about">
-        <div class="about-text">
-            <h2 style="color:#fbbc04;">About Me</h2>
-            <h3>Hello! I'm <span>Parshuram Prajapati</span></h3>
-            <p>I’m a passionate web developer with over a year of experience building responsive and modern websites.
-                Pursuing CSE (AIML) at BLDEA College of Engineering, Vijayapur.</p>
-            <div class="social-icons">
-                <a href="https://www.facebook.com/share/15SJ5GW2Da/" target="_blank" rel="noopener noreferrer"><i
-                        class="fab fa-facebook-f"></i></a>
-                <a href="https://www.youtube.com/@urbanshorts18" target="_blank" rel="noopener noreferrer"><i
-                        class="fab fa-youtube"></i></a>
-                <a href="https://www.instagram.com/its_me_parshuram_18" target="_blank" rel="noopener noreferrer"><i
-                        class="fab fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/parashuram-prajapati-97659a32a/" target="_blank"
-                    rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
-            </div>
-        </div>
-        <div class="stats">
-            <div class="stat-box">
-                <h3 id="projects-count">0</h3>
-                <p>Web Projects Completed</p>
-            </div>
-            <div class="stat-box">
-                <h3 id="clients-count">0</h3>
-                <p>Clients Worked With</p>
-            </div>
-            <div class="stat-box">
-                <h3 id="years-dev">0</h3>
-                <p>Years in Web Development</p>
-            </div>
-            <div class="stat-box">
-                <h3 id="years-sm">0</h3>
-                <p>Years as Social Media Influencer</p>
-            </div>
-        </div>
-    </section>
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="about-text">
+      <h2 style="color:#fbbc04;">About Me</h2>
+      <h3>Hello! I'm <span>Parshuram Prajapati</span></h3>
+      <p>I’m a passionate web developer with over a year of experience building responsive and modern websites. Pursuing CSE (AIML) at BLDEA College of Engineering, Vijayapur.</p>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/share/15SJ5GW2Da/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.youtube.com/@urbanshorts18" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.instagram.com/its_me_parshuram_18" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/parashuram-prajapati-97659a32a/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+    <div class="stats">
+      <div class="stat-box">
+        <h3 id="projects-count">0</h3>
+        <p>Web Projects Completed</p>
+      </div>
+      <div class="stat-box">
+        <h3 id="clients-count">0</h3>
+        <p>Clients Worked With</p>
+      </div>
+      <div class="stat-box">
+        <h3 id="years-dev">0</h3>
+        <p>Years in Web Development</p>
+      </div>
+      <div class="stat-box">
+        <h3 id="years-sm">0</h3>
+        <p>Years as Social Media Influencer</p>
+      </div>
+    </div>
+  </section>
 
-    <!-- Services Section -->
-    <section class="services" id="services">
-        <h2>My Services</h2>
-        <div class="service-cards">
-            <div class="service-card">
-                <h3>Web Development</h3>
-                <p>Modern, responsive websites using HTML, CSS, JavaScript.</p>
-            </div>
-            <div class="service-card">
-                <h3>Front‑End Development</h3>
-                <p>User‑friendly interfaces with latest front‑end tech.</p>
-            </div>
-            <div class="service-card">
-                <h3>Website Maintenance</h3>
-                <p>Ongoing support to keep your site secure and fast.</p>
-            </div>
-            <div class="service-card">
-                <h3>Social Media Content</h3>
-                <p>Vibrant social media content that tells your story.</p>
-            </div>
-        </div>
-    </section>
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <h2>My Services</h2>
+    <div class="service-cards">
+      <div class="service-card">
+        <h3>Web Development</h3>
+        <p>Modern, responsive websites using HTML, CSS, JavaScript.</p>
+      </div>
+      <div class="service-card">
+        <h3>Front‑End Development</h3>
+        <p>User‑friendly interfaces with latest front‑end tech.</p>
+      </div>
+      <div class="service-card">
+        <h3>Website Maintenance</h3>
+        <p>Ongoing support to keep your site secure and fast.</p>
+      </div>
+      <div class="service-card">
+        <h3>Social Media Content</h3>
+        <p>Vibrant social media content that tells your story.</p>
+      </div>
+    </div>
+  </section>
 
-    <!-- Projects Section -->
-    <section class="projects" id="projects">
-        <h2>My Projects</h2>
-        <div class="project-cards">
-            <div class="project-card"><img src="lib.png" alt="Library System" loading="lazy" />
-                <h3>Library Management System</h3>
-                <p>Tkinter app to manage books, members, fines with JSON.</p><a
-                    href="https://github.com/parshuram-prajapati/library-management" target="_blank"
-                    rel="noopener noreferrer">View on GitHub</a>
-            </div>
-            <div class="project-card"><img src="basu.png" alt="Portfolio Website" loading="lazy" />
-                <h3>Portfolio Website</h3>
-                <p>Modern portfolio with HTML/CSS/JS deployed on GitHub Pages.</p><a
-                    href="https://github.com/parshuram-prajapati/basavaraj" target="_blank"
-                    rel="noopener noreferrer">View on GitHub</a>
-            </div>
-            <div class="project-card"><img src="port.png" alt="Portfolio Website" loading="lazy" />
-                <h3>Portfolio Website</h3>
-                <p>Modern portfolio with HTML/CSS/JS deployed on GitHub Pages.</p><a
-                    href="https://github.com/parshuram-prajapati/basavaraj" target="_blank"
-                    rel="noopener noreferrer">View on GitHub</a>
-            </div>
-        </div>
-    </section>
+  <!-- Projects Section -->
+  <section class="projects" id="projects">
+    <h2>My Projects</h2>
+    <div class="project-cards">
+      <div class="project-card"><img src="lib.png" alt="Library System" loading="lazy" />
+        <h3>Library Management System</h3>
+        <p>Tkinter app to manage books, members, fines with JSON.</p>
+        <a href="https://github.com/parshuram-prajapati/library-management" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+      </div>
+      <div class="project-card"><img src="basu.png" alt="Portfolio Website" loading="lazy" />
+        <h3>Portfolio Website</h3>
+        <p>Modern portfolio with HTML/CSS/JS deployed on GitHub Pages.</p>
+        <a href="https://github.com/parshuram-prajapati/basavaraj" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+      </div>
+      <div class="project-card"><img src="port.png" alt="Portfolio Website" loading="lazy" />
+        <h3>Portfolio Website</h3>
+        <p>Modern portfolio with HTML/CSS/JS deployed on GitHub Pages.</p>
+        <a href="https://github.com/parshuram-prajapati/basavaraj" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+      </div>
+    </div>
+  </section>
 
-    <!-- Hire Me Section -->
-    <section class="hire-me" id="hire-me-form">
-        <form action="#" method="POST" name="submit-to-google-sheet">
-            <h2 style="color:#fbbc04; margin-bottom:20px;">Hire Me</h2>
-            <label for="name">Full Name</label>
-            <input type="text" id="name" name="name" placeholder="Your full name" required />
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" placeholder="Your email" required />
-            <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" name="phone" placeholder="Your phone number" />
-            <label for="message">Message</label>
-            <textarea id="message" name="message" placeholder="Tell me about your project..." required></textarea>
-            <button type="submit">Send Request</button>
-            <p id="msg" style="font-weight:bold; display:none; margin-top:10px;"></p>
-        </form>
-    </section>
+  <!-- Hire Me Section -->
+  <section class="hire-me" id="hire-me-form">
+    <form action="#" method="POST" name="submit-to-google-sheet">
+      <h2 style="color:#fbbc04; margin-bottom:20px;">Hire Me</h2>
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Your full name" required />
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="Your email" required />
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" placeholder="Your phone number" />
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="Tell me about your project..." required></textarea>
+      <button type="submit">Send Request</button>
+      <p id="msg" style="font-weight:bold; display:none; margin-top:10px;"></p>
+    </form>
+  </section>
 
-    <!-- Scripts -->
-    <script>
-        function toggleMenu() {
-            document.getElementById('nav-menu').classList.toggle('active');
-        }
+  <!-- Scripts -->
+  <script>
+    function toggleMenu() {
+      document.getElementById('nav-menu').classList.toggle('active');
+    }
 
-        function downloadCV() {
-            window.open('https://drive.google.com/file/d/1zGdCcqjs4XNVPDIABYgjbiJgI4M7p9rW/view?usp=sharing', '_blank');
-        }
+    function downloadCV() {
+      window.open('https://drive.google.com/file/d/1zGdCcqjs4XNVPDIABYgjbiJgI4M7p9rW/view?usp=sharing', '_blank');
+    }
 
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbw4rUPHcmxrw8eH1Ham2ywlAC3uvg7LqjH6RZyWh5kabCNEB7zFBlLU5ZOqPdb3w8pb/exec';
-        const form = document.forms['submit-to-google-sheet'];
-        const msg = document.getElementById('msg');
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbw4rUPHcmxrw8eH1Ham2ywlAC3uvg7LqjH6RZyWh5kabCNEB7zFBlLU5ZOqPdb3w8pb/exec';
+    const form = document.forms['submit-to-google-sheet'];
+    const msg = document.getElementById('msg');
 
-        form.addEventListener('submit', e => {
-            e.preventDefault();
-            const formData = new FormData(form);
-
-            fetch(scriptURL, { method: 'POST', body: formData })
-                .then(() => {
-                    msg.style.display = 'block';
-                    msg.style.color = 'lime';
-                    msg.textContent = "Request Sent!";
-                    setTimeout(() => { msg.style.display = 'none'; }, 3000);
-                    form.reset();
-                })
-                .catch(() => {
-                    msg.style.display = 'block';
-                    msg.style.color = 'red';
-                    msg.textContent = "Something went wrong!";
-                    setTimeout(() => { msg.style.display = 'none'; }, 3000);
-                });
-        });
-
-        function animateValue(id, start, end, duration) {
-            let obj = document.getElementById(id), startTimestamp = null;
-            const step = timestamp => {
-                if (!startTimestamp) startTimestamp = timestamp;
-                const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-                obj.textContent = Math.floor(progress * (end - start) + start);
-                if (progress < 1) window.requestAnimationFrame(step);
-            };
-            window.requestAnimationFrame(step);
-        }
-
-        const observer = new IntersectionObserver(entries => {
-            entries.forEach(e => {
-                if (e.isIntersecting) {
-                    animateValue("projects-count", 0, 1, 1500);
-                    animateValue("clients-count", 0, 1, 1500);
-                    animateValue("years-dev", 0, 1, 1500);
-                    animateValue("years-sm", 0, 1, 1500);
-                    observer.disconnect();
-                }
-            });
-        }, { threshold: 0.5 });
-
-        observer.observe(document.querySelector("#about .stats"));
-
-        document.querySelectorAll('nav a[href^="#"]').forEach(link => {
-            link.addEventListener('click', e => {
-                e.preventDefault();
-                const tgt = document.querySelector(link.getAttribute('href'));
-                if (tgt) tgt.scrollIntoView({ behavior: 'smooth' });
-                document.getElementById('nav-menu').classList.remove('active');
-            });
-        });
-    </script>
-    <script>
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
+    form.addEventListener('submit', e => {
       e.preventDefault();
+      const formData = new FormData(form);
 
-      document.querySelector(this.getAttribute('href')).scrollIntoView({
-        behavior: 'smooth'
+      fetch(scriptURL, { method: 'POST', body: formData })
+        .then(() => {
+          msg.style.display = 'block';
+          msg.style.color = 'lime';
+          msg.textContent = "Request Sent!";
+          setTimeout(() => { msg.style.display = 'none'; }, 3000);
+          form.reset();
+        })
+        .catch(() => {
+          msg.style.display = 'block';
+          msg.style.color = 'red';
+          msg.textContent = "Something went wrong!";
+          setTimeout(() => { msg.style.display = 'none'; }, 3000);
+        });
+    });
+
+    function animateValue(id, start, end, duration) {
+      let obj = document.getElementById(id), startTimestamp = null;
+      const step = timestamp => {
+        if (!startTimestamp) startTimestamp = timestamp;
+        const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+        obj.textContent = Math.floor(progress * (end - start) + start);
+        if (progress < 1) window.requestAnimationFrame(step);
+      };
+      window.requestAnimationFrame(step);
+    }
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          animateValue("projects-count", 0, 1, 1500);
+          animateValue("clients-count", 0, 1, 1500);
+          animateValue("years-dev", 0, 1, 1500);
+          animateValue("years-sm", 0, 1, 1500);
+          observer.disconnect();
+        }
+      });
+    }, { threshold: 0.5 });
+
+    observer.observe(document.querySelector("#about .stats"));
+
+    document.querySelectorAll('nav a[href^="#"]').forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        const tgt = document.querySelector(link.getAttribute('href'));
+        if (tgt) tgt.scrollIntoView({ behavior: 'smooth' });
+        document.getElementById('nav-menu').classList.remove('active');
       });
     });
-  });
-</script>
-
+  </script>
 </body>
-
 </html>
